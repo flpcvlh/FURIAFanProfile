@@ -1,0 +1,44 @@
+<resources>
+    <!-- Estilo para botões principais -->
+    <style name="FuriaButton" parent="Widget.MaterialComponents.Button">
+        <item name="backgroundTint">@color/furia_orange</item>
+        <item name="android:textColor">@color/furia_white</item>
+        <item name="cornerRadius">8dp</item>
+        <item name="android:paddingTop">12dp</item>
+        <item name="android:paddingBottom">12dp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!-- Estilo para campos de texto -->
+    <style name="FuriaEditText" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="boxStrokeColor">@color/furia_orange</item>
+        <item name="hintTextColor">@color/furia_orange_light</item>
+        <item name="android:textColorHint">@color/furia_light_gray</item>
+        <item name="boxBackgroundColor">@color/furia_dark_gray</item>
+    </style>
+
+    <!-- Estilo para cards -->
+    <style name="FuriaCard" parent="Widget.MaterialComponents.CardView">
+        <item name="cardBackgroundColor">@color/furia_dark_gray</item>
+        <item name="cardCornerRadius">8dp</item>
+        <item name="cardElevation">4dp</item>
+        <item name="contentPadding">16dp</item>
+    </style>
+
+    <!-- Estilo para AlertDialog -->
+    <style name="AlertDialogTheme" parent="ThemeOverlay.MaterialComponents.Dialog.Alert">
+        <item name="colorPrimary">@color/furia_orange</item>
+        <item name="colorSurface">@color/furia_dark_gray</item>
+        <item name="colorOnSurface">@color/furia_white</item>
+        <item name="buttonBarPositiveButtonStyle">@style/PositiveButtonStyle</item>
+        <item name="buttonBarNegativeButtonStyle">@style/NegativeButtonStyle</item>
+    </style>
+
+    <style name="PositiveButtonStyle" parent="Widget.MaterialComponents.Button.TextButton.Dialog">
+        <item name="android:textColor">@color/furia_orange</item>
+    </style>
+
+    <style name="NegativeButtonStyle" parent="Widget.MaterialComponents.Button.TextButton.Dialog">
+        <item name="android:textColor">@color/furia_white</item>
+    </style>
+</resources>

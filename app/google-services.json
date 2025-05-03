@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "264366533936",
+    "project_id": "fanprofile-3935b",
+    "storage_bucket": "fanprofile-3935b.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:264366533936:android:a80984293f677657256cf5",
+        "android_client_info": {
+          "package_name": "com.furiagg.fanprofile"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD2QotTGIMzgSdDvdsIctlQQh4rfPgQytM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

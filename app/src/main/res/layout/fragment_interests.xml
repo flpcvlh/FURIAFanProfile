@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/furia_black"
+    tools:context=".ui.fragments.InterestsFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cardInterests"
+            style="@style/FuriaCard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="SEUS INTERESSES"
+                    android:textColor="@color/furia_orange"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/furia_light_gray"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="16dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Compartilhe seus interesses em eSports para personalizarmos sua experiência"
+                    android:textColor="@color/furia_white"
+                    android:textSize="14sp"
+                    android:layout_marginBottom="16dp" />
+
+                <Button
+                    android:id="@+id/btnAddInterest"
+                    style="@style/FuriaButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="ADICIONAR INTERESSE"
+                    android:drawableStart="@drawable/ic_add_interest"
+                    android:drawablePadding="8dp" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rvInterests"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:nestedScrollingEnabled="false" />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cardEvents"
+            style="@style/FuriaCard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="EVENTOS QUE VOCÊ PARTICIPOU"
+                    android:textColor="@color/furia_orange"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/furia_light_gray"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="16dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Adicione eventos que você participou no último ano"
+                    android:textColor="@color/furia_white"
+                    android:textSize="14sp"
+                    android:layout_marginBottom="16dp" />
+
+                <Button
+                    android:id="@+id/btnAddEvent"
+                    style="@style/FuriaButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="ADICIONAR EVENTO"
+                    android:drawableStart="@drawable/ic_event"
+                    android:drawablePadding="8dp" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rvEvents"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:nestedScrollingEnabled="false" />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cardPurchases"
+            style="@style/FuriaCard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="PRODUTOS ADQUIRIDOS"
+                    android:textColor="@color/furia_orange"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/furia_light_gray"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="16dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Informe produtos relacionados com eSports que você comprou"
+                    android:textColor="@color/furia_white"
+                    android:textSize="14sp"
+                    android:layout_marginBottom="16dp" />
+
+                <Button
+                    android:id="@+id/btnAddPurchase"
+                    style="@style/FuriaButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="ADICIONAR COMPRA"
+                    android:drawableStart="@drawable/ic_shopping"
+                    android:drawablePadding="8dp" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rvPurchases"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:nestedScrollingEnabled="false" />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+    </LinearLayout>
+</ScrollView>

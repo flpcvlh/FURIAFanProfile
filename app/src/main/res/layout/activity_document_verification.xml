@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/furia_black"
+    android:padding="16dp"
+    tools:context=".ui.DocumentVerificationActivity">
+
+    <ImageView
+        android:id="@+id/ivBackButton"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:padding="12dp"
+        android:src="@drawable/ic_back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:contentDescription="Voltar" />
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="VERIFICAÇÃO DE DOCUMENTO"
+        android:textColor="@color/furia_orange"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="16dp" />
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cardVerificationResult"
+        style="@style/FuriaCard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvTitle">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="RESULTADOS DA VERIFICAÇÃO"
+                android:textColor="@color/furia_orange"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/furia_light_gray"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="16dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginBottom="12dp">
+
+                <ImageView
+                    android:id="@+id/ivDocumentChecked"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/ic_check_circle"
+                    android:tint="@color/furia_orange"
+                    android:contentDescription="Documento verificado" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Documento válido"
+                    android:textColor="@color/furia_white"
+                    android:textSize="16sp"
+                    android:layout_marginStart="8dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginBottom="12dp">
+
+                <ImageView
+                    android:id="@+id/ivFaceDetected"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/ic_check_circle"
+                    android:tint="@color/furia_orange"
+                    android:contentDescription="Face detectada" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Face detectada"
+                    android:textColor="@color/furia_white"
+                    android:textSize="16sp"
+                    android:layout_marginStart="8dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:id="@+id/ivDataExtracted"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/ic_check_circle"
+                    android:tint="@color/furia_orange"
+                    android:contentDescription="Dados extraídos" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Dados extraídos com sucesso"
+                    android:textColor="@color/furia_white"
+                    android:textSize="16sp"
+                    android:layout_marginStart="8dp" />
+            </LinearLayout>
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cardExtractedData"
+        style="@style/FuriaCard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardVerificationResult">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="DADOS EXTRAÍDOS"
+                android:textColor="@color/furia_orange"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/furia_light_gray"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="16dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nome"
+                android:textColor="@color/furia_light_gray"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/tvExtractedName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nome completo extraído"
+                android:textColor="@color/furia_white"
+                android:textSize="16sp"
+                android:layout_marginBottom="12dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CPF"
+                android:textColor="@color/furia_light_gray"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/tvExtractedCpf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="123.456.789-00"
+                android:textColor="@color/furia_white"
+                android:textSize="16sp"
+                android:layout_marginBottom="12dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Data de Nascimento"
+                android:textColor="@color/furia_light_gray"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/tvExtractedBirthDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="01/01/1990"
+                android:textColor="@color/furia_white"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <Button
+        android:id="@+id/btnConfirmData"
+        style="@style/FuriaButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="CONFIRMAR DADOS"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginBottom="16dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

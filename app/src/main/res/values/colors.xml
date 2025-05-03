@@ -1,0 +1,9 @@
+<resources>
+    <color name="furia_black">#000000</color>
+    <color name="furia_orange">#FF5500</color>
+    <color name="furia_dark_gray">#212121</color>
+    <color name="furia_light_gray">#424242</color>
+    <color name="furia_white">#FFFFFF</color>
+    <color name="furia_orange_light">#FF8844</color>
+    <color name="furia_orange_dark">#CC4400</color>
+</resources>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/furia_dark_gray"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nome do produto"
+        android:textColor="@color/furia_white"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/etProductName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/bg_text_border"
+        android:padding="12dp"
+        android:textColor="@color/furia_white"
+        android:textColorHint="@color/furia_light_gray"
+        android:hint="Ex: Camisa oficial FURIA 2024"
+        android:inputType="text" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Data da compra"
+        android:textColor="@color/furia_white"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/etPurchaseDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/bg_text_border"
+        android:padding="12dp"
+        android:textColor="@color/furia_white"
+        android:textColorHint="@color/furia_light_gray"
+        android:hint="dd/mm/aaaa"
+        android:inputType="date" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Preço (R$)"
+        android:textColor="@color/furia_white"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/etPrice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/bg_text_border"
+        android:padding="12dp"
+        android:textColor="@color/furia_white"
+        android:textColorHint="@color/furia_light_gray"
+        android:hint="Ex: 249,90"
+        android:inputType="numberDecimal" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Tipo de compra"
+        android:textColor="@color/furia_white"
+        android:textSize="16sp" />
+
+    <Spinner
+        android:id="@+id/spinnerPurchaseType"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/spinner_background"
+        android:popupBackground="@color/furia_dark_gray"
+        android:entries="@array/purchase_types" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Detalhes"
+        android:textColor="@color/furia_white"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/etPurchaseDetails"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/bg_text_border"
+        android:padding="12dp"
+        android:lines="3"
+        android:gravity="top"
+        android:textColor="@color/furia_white"
+        android:textColorHint="@color/furia_light_gray"
+        android:hint="Detalhes sobre a compra (opcional)"
+        android:inputType="textMultiLine" />
+
+</LinearLayout>

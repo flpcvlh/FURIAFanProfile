@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/furia_dark_gray"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Categoria"
+        android:textColor="@color/furia_white"
+        android:textSize="16sp" />
+
+    <Spinner
+        android:id="@+id/spinnerCategory"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/spinner_background"
+        android:popupBackground="@color/furia_dark_gray"
+        android:entries="@array/interest_categories" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Nome"
+        android:textColor="@color/furia_white"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/etInterestName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/bg_text_border"
+        android:padding="12dp"
+        android:textColor="@color/furia_white"
+        android:textColorHint="@color/furia_light_gray"
+        android:hint="Ex: Counter-Strike 2"
+        android:inputType="text" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Nível de interesse"
+        android:textColor="@color/furia_white"
+        android:textSize="16sp" />
+
+    <RatingBar
+        android:id="@+id/ratingBarInterest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="8dp"
+        android:numStars="5"
+        android:rating="3"
+        android:stepSize="1"
+        android:progressTint="@color/furia_orange" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Detalhes"
+        android:textColor="@color/furia_white"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/etInterestDetails"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/bg_text_border"
+        android:padding="12dp"
+        android:lines="3"
+        android:gravity="top"
+        android:textColor="@color/furia_white"
+        android:textColorHint="@color/furia_light_gray"
+        android:hint="Detalhes sobre seu interesse (opcional)"
+        android:inputType="textMultiLine" />
+
+</LinearLayout>

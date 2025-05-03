@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">FURIA Fan Profile</string>
+    <string name="navigation_drawer_open">Abrir menu de navegação</string>
+    <string name="navigation_drawer_close">Fechar menu de navegação</string>
+
+    <!-- Arrays -->
+    <string-array name="interest_categories">
+        <item>Jogo</item>
+        <item>Time</item>
+        <item>Jogador</item>
+        <item>Torneio</item>
+        <item>Produto</item>
+        <item>Criador de Conteúdo</item>
+    </string-array>
+
+    <string-array name="purchase_types">
+        <item>Merchandise</item>
+        <item>Ingresso</item>
+        <item>Assinatura</item>
+        <item>Jogo</item>
+        <item>Item in-game</item>
+        <item>Outro</item>
+    </string-array>
+</resources>

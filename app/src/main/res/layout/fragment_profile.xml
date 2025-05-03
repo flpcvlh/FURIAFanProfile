@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/furia_black"
+    tools:context=".ui.fragments.ProfileFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cardUserInfo"
+            style="@style/FuriaCard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/ivProfilePhoto"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/default_profile"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:ignore="MissingClass" />
+
+                <TextView
+                    android:id="@+id/tvProfileName"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Nome do Usuário"
+                    android:textColor="@color/furia_white"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:layout_marginStart="16dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/ivProfilePhoto"
+                    app:layout_constraintTop_toTopOf="@+id/ivProfilePhoto" />
+
+                <TextView
+                    android:id="@+id/tvProfileEmail"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="usuario@email.com"
+                    android:textColor="@color/furia_light_gray"
+                    android:textSize="14sp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="4dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/ivProfilePhoto"
+                    app:layout_constraintTop_toBottomOf="@+id/tvProfileName" />
+
+                <Button
+                    android:id="@+id/btnEditProfile"
+                    style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Editar perfil"
+                    android:textColor="@color/furia_orange"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="8dp"
+                    app:strokeColor="@color/furia_orange"
+                    app:layout_constraintStart_toEndOf="@+id/ivProfilePhoto"
+                    app:layout_constraintTop_toBottomOf="@+id/tvProfileEmail" />
+
+                <TextView
+                    android:id="@+id/tvVerificationStatus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Verificado"
+                    android:textColor="@color/furia_orange"
+                    android:drawableStart="@drawable/ic_verified"
+                    android:drawablePadding="4dp"
+                    android:layout_marginTop="16dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/ivProfilePhoto" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cardPersonalInfo"
+            style="@style/FuriaCard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cardUserInfo">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="INFORMAÇÕES PESSOAIS"
+                    android:textColor="@color/furia_orange"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/furia_light_gray"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="16dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="CPF"
+                    android:textColor="@color/furia_light_gray"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/tvProfileCpf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="123.456.789-00"
+                    android:textColor="@color/furia_white"
+                    android:textSize="16sp"
+                    android:layout_marginBottom="16dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Endereço"
+                    android:textColor="@color/furia_light_gray"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/tvProfileAddress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Av. Paulista, 123 - São Paulo/SP"
+                    android:textColor="@color/furia_white"
+                    android:textSize="16sp"
+                    android:layout_marginBottom="16dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Data de Nascimento"
+                    android:textColor="@color/furia_light_gray"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/tvProfileBirthDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="01/01/2000"
+                    android:textColor="@color/furia_white"
+                    android:textSize="16sp" />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cardDocuments"
+            style="@style/FuriaCard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cardPersonalInfo">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="DOCUMENTOS"
+                    android:textColor="@color/furia_orange"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/furia_light_gray"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="16dp" />
+
+                <Button
+                    android:id="@+id/btnUploadDocument"
+                    style="@style/FuriaButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="ADICIONAR DOCUMENTO"
+                    android:drawableStart="@drawable/ic_upload"
+                    android:drawablePadding="8dp" />
+
+                <TextView
+                    android:id="@+id/tvNoDocuments"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nenhum documento adicionado"
+                    android:textColor="@color/furia_light_gray"
+                    android:textSize="14sp"
+                    android:layout_marginTop="8dp"
+                    android:visibility="gone" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rvDocuments"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    tools:listitem="@layout/item_document" />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cardSocialMedia"
+            style="@style/FuriaCard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cardDocuments">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="REDES SOCIAIS"
+                    android:textColor="@color/furia_orange"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/furia_light_gray"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="16dp" />
+
+                <Button
+                    android:id="@+id/btnAddSocialMedia"
+                    style="@style/FuriaButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="ADICIONAR REDE SOCIAL"
+                    android:drawableStart="@drawable/ic_social_media"
+                    android:drawablePadding="8dp" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rvSocialMedia"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    tools:listitem="@layout/item_social_media" />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cardEsportsProfiles"
+            style="@style/FuriaCard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cardSocialMedia">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="PERFIS DE ESPORTS"
+                    android:textColor="@color/furia_orange"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/furia_light_gray"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="16dp" />
+
+                <Button
+                    android:id="@+id/btnAddEsportsProfile"
+                    style="@style/FuriaButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="ADICIONAR PERFIL DE ESPORTS"
+                    android:drawableStart="@drawable/ic_games"
+                    android:drawablePadding="8dp" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rvEsportsProfiles"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    tools:listitem="@layout/item_esports_profile" />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="176dp"
+    android:background="@color/furia_black"
+    android:gravity="bottom"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/ivUserPhoto"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:src="@drawable/default_profile"
+        android:layout_marginBottom="8dp"
+        tools:ignore="MissingClass" />
+
+    <TextView
+        android:id="@+id/tvUsername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nome do Usuário"
+        android:textColor="@color/furia_white"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvUserEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="usuario@email.com"
+        android:textColor="@color/furia_light_gray"
+        android:textSize="14sp" />
+
+</LinearLayout>

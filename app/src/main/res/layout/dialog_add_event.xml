@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/furia_dark_gray"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nome do evento"
+        android:textColor="@color/furia_white"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/etEventName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/bg_text_border"
+        android:padding="12dp"
+        android:textColor="@color/furia_white"
+        android:textColorHint="@color/furia_light_gray"
+        android:hint="Ex: FURIA Fan Meet-up"
+        android:inputType="text" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Data"
+        android:textColor="@color/furia_white"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/etEventDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/bg_text_border"
+        android:padding="12dp"
+        android:textColor="@color/furia_white"
+        android:textColorHint="@color/furia_light_gray"
+        android:hint="dd/mm/aaaa"
+        android:inputType="date" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Local"
+        android:textColor="@color/furia_white"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/etEventLocation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/bg_text_border"
+        android:padding="12dp"
+        android:textColor="@color/furia_white"
+        android:textColorHint="@color/furia_light_gray"
+        android:hint="Ex: São Paulo, SP"
+        android:inputType="text" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Tipo de evento"
+        android:textColor="@color/furia_white"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/etEventType"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/bg_text_border"
+        android:padding="12dp"
+        android:textColor="@color/furia_white"
+        android:textColorHint="@color/furia_light_gray"
+        android:hint="Ex: Encontro de fãs, Torneio, Streaming"
+        android:inputType="text" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Detalhes"
+        android:textColor="@color/furia_white"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/etEventDetails"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/bg_text_border"
+        android:padding="12dp"
+        android:lines="3"
+        android:gravity="top"
+        android:textColor="@color/furia_white"
+        android:textColorHint="@color/furia_light_gray"
+        android:hint="Detalhes sobre o evento (opcional)"
+        android:inputType="textMultiLine" />
+
+</LinearLayout>

@@ -1,0 +1,25 @@
+<resources>
+    <style name="Theme.FURIAFanProfile" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <!-- Cores primárias -->
+        <item name="colorPrimary">@color/furia_orange</item>
+        <item name="colorPrimaryVariant">@color/furia_orange_dark</item>
+        <item name="colorOnPrimary">@color/furia_white</item>
+
+        <!-- Cores secundárias -->
+        <item name="colorSecondary">@color/furia_orange_light</item>
+        <item name="colorSecondaryVariant">@color/furia_orange</item>
+        <item name="colorOnSecondary">@color/furia_black</item>
+
+        <!-- Cor de fundo -->
+        <item name="android:windowBackground">@color/furia_black</item>
+        <item name="android:statusBarColor">@color/furia_black</item>
+
+        <!-- Configurações de texto -->
+        <item name="android:textColor">@color/furia_white</item>
+        <item name="android:textColorPrimary">@color/furia_white</item>
+        <item name="android:textColorSecondary">@color/furia_orange_light</item>
+
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+</resources>
