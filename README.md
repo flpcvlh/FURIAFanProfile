@@ -25,17 +25,17 @@ FURIAFanProfile é um aplicativo mobile criado para coletar e organizar informa�
 
 - **O aplicativo permite mapear e entender**:
 
-Dados Cadastrais: Nome completo, CPF, endereço e data de nascimento
+- Dados Cadastrais: Nome completo, CPF, endereço e data de nascimento
 
-Eventos e Atividades: Participação em campeonatos, compras de produtos oficiais e presença em arenas
+- Eventos e Atividades: Participação em campeonatos, compras de produtos oficiais e presença em arenas
 
-Interesses Esportivos: Jogos favoritos, times acompanhados e frequência de consumo de conteúdo
+- Interesses Esportivos: Jogos favoritos, times acompanhados e frequência de consumo de conteúdo
 
-Documentação Oficial: Imagens/documentos de RG, CNH ou outros para validação com IA
+- Documentação Oficial: Imagens/documentos de RG, CNH ou outros para validação com IA
 
-Redes Sociais: Perfis vinculados e atividades relacionadas a e-sports
+- Redes Sociais: Perfis vinculados e atividades relacionadas a e-sports
 
-Links Externos Relevantes: Compartilhamento e verificação de perfis em sites especializados
+- Links Externos Relevantes: Compartilhamento e verificação de perfis em sites especializados
 
 ## 🛠️ Tecnologias Utilizadas
 
@@ -71,54 +71,52 @@ Conta no Firebase com Firestore, Storage e Authentication ativados
 1. **Clone o repositório**
 
 ```bash
-Copiar
-Editar
 git clone https://github.com/flpcvlh/FURIAFanProfile.git
 cd FURIAFanProfile
 ```
 
 2. **Abra o projeto no Android Studio**
 
-File > Open > Selecione a pasta do projeto
+- File > Open > Selecione a pasta do projeto
 
 3. **Configure o Firebase**
 
-Baixe o google-services.json do seu projeto no Firebase e coloque em app/
+- Baixe o google-services.json do seu projeto no Firebase e coloque em app/
 
-Configure Firestore, Authentication (e-mail/senha e redes sociais) e Storage
+- Configure Firestore, Authentication (e-mail/senha e redes sociais) e Storage
 
 4. **Configure o ML Kit**
 
-No build.gradle (Module: app), certifique-se de incluir as dependências do ML Kit:
+- No build.gradle (Module: app), certifique-se de incluir as dependências do ML Kit:
 
 ```groovy
 implementation 'com.google.mlkit:text-recognition:16.0.0'
 implementation 'com.google.mlkit:text-recognition:16.0.0'
 ```
 
-O ML Kit será usado diretamente no Android Studio, sem necessidade de configuração externa
+- O ML Kit será usado diretamente no Android Studio, sem necessidade de configuração externa
 
-Garanta que as permissões de câmera e leitura de arquivos estão definidas no AndroidManifest.xml
+- Garanta que as permissões de câmera e leitura de arquivos estão definidas no AndroidManifest.xml
 
 5. **Execute o projeto**
 
-Conecte um dispositivo físico ou inicie um emulador Android
+- Conecte um dispositivo físico ou inicie um emulador Android
 
-Clique em Run no Android Studio ou use o atalho Shift + F10
+- Clique em Run no Android Studio ou use o atalho Shift + F10
 
 
 
 ## 🧠 Fluxo do Aplicativo
 
-Tela de Boas-vindas
+- Tela de Boas-vindas
 
-Cadastro de Usuário e Coleta de Dados
+- Cadastro de Usuário e Coleta de Dados
 
-Envio de Documentos e Validação
+- Envio de Documentos e Validação
 
-Integração com Redes Sociais e Links
+- Integração com Redes Sociais e Links
 
-Exibição do Perfil do Fã com Insights Personalizados
+- Exibição do Perfil do Fã com Insights Personalizados
 
 ## 📁 Estrutura do Projeto
 
@@ -140,11 +138,11 @@ FURIAFanProfile/
 
 ## 🔧 Personalização
 
-Campos do Formulário: Adicione ou remova informações conforme o perfil desejado
+- Campos do Formulário: Adicione ou remova informações conforme o perfil desejado
 
-Estilo do App: Altere o tema FURIA em themes.xml e colors.xml
+- Estilo do App: Altere o tema FURIA em themes.xml e colors.xml
 
-Funcionalidades Extras: É possível integrar gamificação, NFTs, cupons e muito mais
+- Funcionalidades Extras: É possível integrar gamificação, NFTs, cupons e muito mais
 
 ## 🌐 Implantação
 
@@ -158,25 +156,25 @@ Distribuir via Google Play (beta) ou sites como Itch.io
 
 ## 📱 Responsividade
 
-O aplicativo é compatível com:
+**O aplicativo é compatível com**:
 
-Smartphones Android a partir da versão 8.0 (Oreo)
+- Smartphones Android a partir da versão 8.0 (Oreo)
 
-Telas pequenas, médias e grandes
+- Telas pequenas, médias e grandes
 
 ## 👥 Contribuição
 
-Contribuições são bem-vindas! Para colaborar:
+**Contribuições são bem-vindas! Para colaborar**:
 
 Fork este repositório
 
-Crie uma branch (git checkout -b nova-feature)
+- Crie uma branch (git checkout -b nova-feature)
 
-Commit suas mudanças (git commit -m 'Adiciona nova funcionalidade')
+- Commit suas mudanças (git commit -m 'Adiciona nova funcionalidade')
 
-Push para sua branch (git push origin nova-feature)
+- Push para sua branch (git push origin nova-feature)
 
-Abra um Pull Request com uma breve explicação
+- Abra um Pull Request com uma breve explicação
 
 ## 📄 Licença
 Este projeto está licenciado sob a Licença MIT - veja o arquivo LICENSE para mais detalhes.
