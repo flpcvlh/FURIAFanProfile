@@ -120,7 +120,7 @@ implementation 'com.google.mlkit:text-recognition:16.0.0'
 
 ## 📁 Estrutura do Projeto
 
-
+```
 FURIAFanProfile/
 ├── app/
 │   ├── src/
@@ -134,7 +134,7 @@ FURIAFanProfile/
 │   └── build.gradle
 ├── google-services.json
 └── README.md
-
+```
 
 ## 🔧 Personalização
 
